@@ -36,7 +36,9 @@ NEXT_PUBLIC_WA_NUMBER=your_phone_number
 NEXT_PUBLIC_PAYPAL_EMAIL=your_email
 ```
 Run development server:
+```
 npm run dev
+```
 
 🔒 Security Architecture
 Unlike standard client-side implementations, TixStore uses a private API Route architecture:
