@@ -23,22 +23,18 @@ Deployment: Vercel
 
 🚀 Getting Started
 Clone the repository:
-
-Bash
-
+```
 git clone https://github.com/rootkiddoo/TixStore.git
+```
+
 Install dependencies:
-
-Bash
-
 npm install
 Configure Environment Variables: Create a .env.local file in the root directory and add:
-
-``
+```
 DISCORD_WEBHOOK_URL=your_secret_webhook_url
 NEXT_PUBLIC_WA_NUMBER=your_phone_number
 NEXT_PUBLIC_PAYPAL_EMAIL=your_email
-``
+```
 Run development server:
 npm run dev
 
