@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀 TixStore - Premium Digital Account Store
+Welcome to TixStore, a modern and secure platform for premium digital accounts and gaming assets. Built with the speed of Next.js and the security of Server-side API Routes.
 
-## Getting Started
+✨ Features
+⚡ Blazing Fast Performance: Optimized with Next.js App Router and Geist font.
 
-First, run the development server:
+🛡️ Secure Webhook Integration: Sensitive Discord webhooks are hidden behind server-side API routes to prevent leaks.
 
-```bash
+📱 Fully Responsive: Seamless experience across mobileSimulator, tablets, and desktops.
+
+🏷️ Real-time Stock Status: Visual "Sold Out" indicators and grayscale effects for out-of-stock items.
+
+💳 Multi-channel Payment: Integrated notifications for WhatsApp and PayPal inquiries.
+
+🛠️ Tech Stack
+Framework: Next.js 15
+
+Styling: Tailwind CSS
+
+Notifications: Discord Webhooks via Serverless Functions
+
+Deployment: Vercel
+
+🚀 Getting Started
+Clone the repository:
+
+Bash
+
+git clone https://github.com/rootkiddoo/TixStore.git
+Install dependencies:
+
+Bash
+
+npm install
+Configure Environment Variables: Create a .env.local file in the root directory and add:
+
+Cuplikan kode
+
+DISCORD_WEBHOOK_URL=your_secret_webhook_url
+NEXT_PUBLIC_WA_NUMBER=your_phone_number
+NEXT_PUBLIC_PAYPAL_EMAIL=your_email
+Run development server:
+
+Bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔒 Security Architecture
+Unlike standard client-side implementations, TixStore uses a private API Route architecture:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+User initiates a "Buy Now" request.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The request is sent to /api/notify.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The server fetches the secret DISCORD_WEBHOOK_URL and sends the data.
 
-## Learn More
+Result: Your webhook URL is never exposed to the client's browser.
 
-To learn more about Next.js, take a look at the following resources:
+📈 Roadmap
+[x] Basic Landing Page & Gallery
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[x] Secure Discord Notifications
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[ ] Supabase Database Integration (Coming Soon)
 
-## Deploy on Vercel
+[ ] Automated Payment Gateway
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[ ] User Dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by rootkiddo - 2026
