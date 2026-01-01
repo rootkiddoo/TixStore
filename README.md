@@ -34,16 +34,14 @@ Bash
 npm install
 Configure Environment Variables: Create a .env.local file in the root directory and add:
 
-Cuplikan kode
-
+``
 DISCORD_WEBHOOK_URL=your_secret_webhook_url
 NEXT_PUBLIC_WA_NUMBER=your_phone_number
 NEXT_PUBLIC_PAYPAL_EMAIL=your_email
+``
 Run development server:
-
-Bash
-
 npm run dev
+
 🔒 Security Architecture
 Unlike standard client-side implementations, TixStore uses a private API Route architecture:
 
